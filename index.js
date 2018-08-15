@@ -1,5 +1,5 @@
 const fs = require('fs-extra')
-const defaultRootPath = `${__dirname}/.git-consume`
+const defaultRootPath = `${__dirname}/.git-read`
 const simpleGit = require('simple-git')
 
 class Reader {
@@ -18,6 +18,7 @@ class Reader {
     this.checkRootPath()
     this.setupClient()
     this.setRepoName()
+
     return this.cloneRepo()
   }
 
@@ -40,11 +41,11 @@ class Reader {
   cloneRepo() {
     return new Promise((resolve, reject) => {
       if (!this.hasRepoBeenCloned()) {
-        this
-          .client
-          .clone(this.repoPath, null, (err) => {
-            err ? reject(err) : resolve()
-          })
+        return this
+                .client
+                .clone(this.repoPath, null, (err) => {
+                  err ? reject(err) : resolve()
+                })
       }
 
       resolve()

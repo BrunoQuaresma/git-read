@@ -1,4 +1,4 @@
-# git-consume
+# git-read
 Read files from git
 
 ## Usage

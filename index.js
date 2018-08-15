@@ -2,7 +2,7 @@ const fs = require('fs-extra')
 const defaultRootPath = `${__dirname}/.git-consume`
 const simpleGit = require('simple-git')
 
-class Consumer {
+class Reader {
   constructor(
     repoPath,
     rootPath = defaultRootPath,
@@ -59,9 +59,9 @@ class Consumer {
     return `${this.rootPath}/${this.repoName}`
   }
 
-  get(filePath) {
+  read(filePath) {
     return fs.readFileSync(`${this.getLocalRepoPath()}/${filePath}`, 'utf8')
   }
 }
 
-module.exports = Consumer
+module.exports = Reader

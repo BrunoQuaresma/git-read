@@ -1,7 +1,7 @@
 {
-  "name": "git-consumer",
+  "name": "git-read",
   "version": "0.1.0",
-  "description": "A content consumer for git",
+  "description": "Read files from git",
   "main": "index.js",
   "author": "Bruno Quaresma <bruno_nonato_quaresma@hotmail.com>",
    "contributors": [{
@@ -11,9 +11,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["git", "content", "consumer"],
+  "keywords": ["git", "content", "read"],
   "license": "MIT",
-  "repository": "git://github.com/BrunoQuaresma/git-consumer.git",
+  "repository": "git://github.com/BrunoQuaresma/git-read.git",
   "dependencies": {
     "fs-extra": "^7.0.0",
     "simple-git": "^1.96.0"

@@ -1,13 +1,13 @@
 # git-consume
-A content consumer for git
+Read files from git
 
 ## Usage
 ```javascript
-const GitConsumer = require('git-consumer')
-const gitConsumer = new GitConsumer('https://github.com/user/repo.git')
+const GitReader = require('git-read')
+const gitReader = new GitReader('https://github.com/user/repo.git')
 
-gitConsumer.load().then(() => {
-  console.log(gitConsumer.get('config/user.json'))
+gitReader.load().then(() => {
+  console.log(gitReader.read('config/user.json'))
 })
 
 ## output:
@@ -17,4 +17,4 @@ gitConsumer.load().then(() => {
 | API | What it does |
 |-----|--------------|
 |constructor(repoPath)|Builds a consumer for the specified repository|
-|get(filePath)|Returns the content of the repo file encoded by utf8|
+|read(filePath)|Returns the content of the repo file encoded by utf8|

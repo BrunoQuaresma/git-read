@@ -1,5 +1,5 @@
 {
-  "name": "git-consume",
+  "name": "git-consumer",
   "version": "0.1.0",
   "description": "A content consumer for git",
   "main": "index.js",

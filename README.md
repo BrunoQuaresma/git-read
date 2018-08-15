@@ -10,8 +10,8 @@ gitReader.load().then(() => {
   console.log(gitReader.read('config/user.json'))
 })
 
-## output:
-## { "name": "Foo", "last_name": "Bar" }
+// output:
+// { "name": "Foo", "last_name": "Bar" }
 ```
 
 | API | What it does |

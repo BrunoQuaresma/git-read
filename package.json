@@ -2,7 +2,7 @@
   "name": "git-read",
   "version": "0.1.0",
   "description": "Read files from git",
-  "main": "index.js",
+  "main": "reader.js",
   "author": "Bruno Quaresma <bruno_nonato_quaresma@hotmail.com>",
    "contributors": [{
      "name": "Bruno Quaresma",

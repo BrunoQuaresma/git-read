@@ -1,14 +1,19 @@
 {
   "name": "git-consume",
   "version": "0.1.0",
-  "description": "",
+  "description": "A content consumer for git",
   "main": "index.js",
+  "author": "Bruno Quaresma <bruno_nonato_quaresma@hotmail.com>",
+   "contributors": [{
+     "name": "Bruno Quaresma",
+     "email": "bruno_nonato_quaresma@hotmail.com"
+   }],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["git", "content", "consumer"],
+  "license": "MIT",
+  "repository": "git://github.com/BrunoQuaresma/git-consumer.git",
   "dependencies": {
     "fs-extra": "^7.0.0",
     "simple-git": "^1.96.0"
